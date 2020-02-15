@@ -21,7 +21,6 @@ import random
 import time
 import sys
 
-# leggi da un file
 def read_from_a_file(fparole):
     fd = open(fparole, "r")
     
@@ -72,9 +71,11 @@ if __name__ == "__main__":
         if(len(suffixes) == 0):
             print("Errore: Inserisci almeno un suffisso nel file suffixes.txt (ti consiglio un aggettivo brutto)")
             exit(1)
-
-        generator(int(sys.argv[1]))
-    else:
         
+        if(sys.argv[1] == "inf"):
+            generator("inf")
+        else:
+            generator(int(sys.argv[1]))
+    else:
         print("Utilizzo: insulti_random.py numero_di_insulti\n" + 
         "          Inserisci inf anziche' un numero se vuoi insulti casuali continui")

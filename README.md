@@ -1,4 +1,7 @@
-# Istruzioni
+# insulti-random-generator
+Un semplice generatore di insulti casuali.
+
+## Istruzioni
 Clona questa repo o scarica l'archivio zip e scompattalo.
 
 ```
